@@ -1,0 +1,17 @@
+{
+  "name": "web-personal-api",
+  "version": "0.0.1",
+  "description": "API for the personal web - Udemy practice",
+  "main": "index.js",
+  "author": "Ivan Daniel Silva Oyola",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "mongodb": "^5.7.0",
+    "mongoose": "6.10.0",
+    "nodemon": "^3.0.1"
+  }
+}
