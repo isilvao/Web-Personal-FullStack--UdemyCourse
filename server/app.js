@@ -10,13 +10,13 @@ const app = express();
 // Import routes
 const authRoutes = require("./router/auth");
 
-// Configure Routes
-app.use(`/api/${API_VERSION}`, authRoutes);
-
 // Configure Body Parser
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true })); // Hay que configurar el app antes de configurar las rutas
 app.use(bodyParser.json());
+
+// Configure Routes
+app.use(`/api/${API_VERSION}`, authRoutes);
 
 // Configure static folder
 
